@@ -12,6 +12,27 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  /* border: 1px solid black; */
+  padding: 8px;
+  justify-content: space-between;
+}
+
+/* I think space-between is enough to separate the two flex container, therefore the justify-content in left-header and right-header 
+*  are unnecessary. */
+
+.left-header {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+  gap: 16px;
+}
+
+.right-header {
+  display: flex;
+  justify-content: flex-end; 
+  /* border: 1px solid black; */
+  gap: 16px;
 }
 
 .profile-image {
@@ -45,4 +66,8 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 8px;
+  gap: 8px;
 }
