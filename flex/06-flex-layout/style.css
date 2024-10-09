@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,3 +27,71 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  flex: 1;
+  gap: 16px;
+}
+
+/* this is just for visuals, that way I can see that logo, input and buttons should have spaces using the gap property in the content container.*/
+
+/* img { */
+/*   border: 1px solid #ddd; */
+/* } */
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0; /* by default lists have padding because of the style*/
+}
+
+a {
+  color: #808080;
+  text-decoration: none;
+}
+
+/* these are what I initially did, I have learned a lot in this exercise.*/
+
+/* .header .left-links, */
+/* .header .right-links { */
+/*   display: flex; */
+/*   gap: 16px; */
+/* } */
+
+/* .header .right-links { */
+/*   margin-right: 20px; */
+/* } */
+/**/
+/* .footer .right-links { */
+/*   margin-right: 20px; */
+/* } */
+
+/* .footer { */
+/*   display: flex; */
+/*   justify-content: space-between; */
+/*   padding: 10px; */
+/* } */
+/**/
+/* .footer .left-links, */
+/* .footer .right-links { */
+/*   display: flex; */
+/*   gap: 16px; */
+/* } */
